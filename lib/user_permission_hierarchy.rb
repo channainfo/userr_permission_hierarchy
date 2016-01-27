@@ -1,0 +1,5 @@
+require 'user_permission_hierarchy/hierarchy_container'
+require 'user_permission_hierarchy/hierarchy_user'
+
+module UserPermissionHierarchy
+end
