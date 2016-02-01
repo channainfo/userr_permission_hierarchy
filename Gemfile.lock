@@ -44,6 +44,9 @@ GEM
       tzinfo (~> 1.1)
     ancestry (2.1.0)
       activerecord (>= 3.0.0)
+    annotate (2.6.10)
+      activerecord (>= 3.2, <= 4.3)
+      rake (~> 10.4)
     arel (6.0.3)
     builder (3.2.2)
     concurrent-ruby (1.0.0)
@@ -132,6 +135,7 @@ PLATFORMS
 
 DEPENDENCIES
   ancestry
+  annotate
   factory_girl_rails
   ffaker
   mysql2 (~> 0.3.18)

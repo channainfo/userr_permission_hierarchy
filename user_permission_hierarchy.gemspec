@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency 'mysql2', '~> 0.3.18'
+  s.add_development_dependency 'annotate'
 end
