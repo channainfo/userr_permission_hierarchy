@@ -22,6 +22,12 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+
+  it "belongs to a place" do
+    user = create(:user)
+    expect(user).to respond_to(:place)
+  end
+
   describe "#has_permission?" do
     context "user belongs to that hierarchy" do
       it "return true" do

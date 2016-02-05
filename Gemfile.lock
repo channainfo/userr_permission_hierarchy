@@ -142,6 +142,3 @@ DEPENDENCIES
   rspec-rails
   sqlite3
   user_permission_hierarchy!
-
-BUNDLED WITH
-   1.10.6

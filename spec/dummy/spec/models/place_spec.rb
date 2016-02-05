@@ -20,4 +20,13 @@ RSpec.describe Place, type: :model do
       expect(place).to respond_to(:users)
     end
   end
+
+  describe '#allow?' do
+    it 'invoke user has permission over place' do
+      place = create(:place, parent: nil)
+      user = create(:user, place: place)
+      expect(user).to receive(:has_permission?).with(place)
+      place.allow?(user)
+    end
+  end
 end
